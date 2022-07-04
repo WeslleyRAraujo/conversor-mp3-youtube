@@ -15,8 +15,8 @@ def run():
             
             # Convert all links
             for link in links:
-                color = randint(10, 90)
-                print("\033[1;31m" + "Link: " + link + "\033[0;0m")
+                color = randint(30, 70)
+                print("\033[1;" + color + "m" + "Link: " + link + "\033[0;0m")
                 convert_mp3(link)
             # Delete the content of list.txt
             file_list_txt = open('list.txt', 'w')
